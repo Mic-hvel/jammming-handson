@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ .header {
+    font-size: 20px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+    color: white;
+    width: 100%;
+    position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+    position: absolute;
+    width: 100%
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.body {
+    background-image: url(./images/background_photo_desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Lora', serif;
+    bottom: 0;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow-y: scroll;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.searchResults {
+    width: 50%;
+    height: 650px;
+    overflow-y: scroll;
+    padding: 0.88rem;
+    background-color: rgba(1, 12, 63, 0.7);
+    box-shadow: 0 4px 2px 2px #000000;
+    display: flex;
+    margin: 50px auto;
+    
 }
 
-.App-link {
-  color: #61dafb;
+.playlist {
+    width: 50%;
+    height: 450px;
+    overflow-y: scroll;
+    padding: 0.88rem;
+    background-color: rgba(1, 12, 63, 0.7);
+    box-shadow: 0 4px 2px 2px #000000;
+    margin: 50px auto;
+    margin-bottom: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.results {
+    width: 100%;
+    font-size: 20px;
+    font-weight: normal;
+    
 }
+
+.new-playlist {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6.94rem;
+    margin-bottom: 6.33rem;
+}
+
+.form input {
+    width: 300px;
+    padding: 0.88rem 0;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    margin-bottom: 2.22rem;
+    color: #010c3f;
+    text-align: center;
+    font-size: 1rem;
+    background-color: white;
+    color: grey;
+    font-size: 20px;
+    height: 60px;
+    margin: auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.search button {
+    background-color: #010c3f;
+    color: #fff;
+    cursor: pointer;
+    width: 8.11rem;
+    padding: 0.77rem 0;
+    border-radius: 54px;
+    text-align: center;
+    font-size: .833rem;
+    transition: background-color .25s;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.save button {
+    cursor: pointer;
+    width: 10rem;
+    padding: 0.77rem 0;
+    border-radius: 54px;
+    margin-top: 1.27rem;
+    background-color: #6c41ec;
+    text-align: center;
+    font-size: .83rem;
+    transition: background-color .25s;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+
